@@ -6,7 +6,7 @@ if (window.ethereum){
 await ethereum.enable();
 //if its an old version of metamask this is the way to do it
 } else if (window.web3){
-    web3 - new Web3(window.web3.currentProvider);
+    web3 = new Web3(window.web3.currentProvider);
 //set web 3 provider to your own computer
 } else {
     const provider = new Web3.providers.HttpProvider('http://localhost:8545');
